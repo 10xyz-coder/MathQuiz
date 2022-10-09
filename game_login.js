@@ -2,7 +2,7 @@ function addUsers() {
   localStorage.setItem('p1', document.getElementById('player1_i').value);
   localStorage.setItem('p2', document.getElementById('player2_i').value);
 
-  window.location.pathname = "/game/"
+  window.location.pathname = "/MathQuiz/game/"
 }
 
 function loadBody() {
