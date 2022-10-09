@@ -1,6 +1,8 @@
 function addUsers() {
   localStorage.setItem('p1', document.getElementById('player1_i').value);
   localStorage.setItem('p2', document.getElementById('player2_i').value);
+
+  window.location = "/game/"
 }
 
 function loadBody() {
