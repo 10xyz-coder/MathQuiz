@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Math Quiz</title>
+	<title>Maths Quiz</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="game.css">
-
-<script src="game_login.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="loadBody();" style="background:red;">
+<body onload="bodyLoad();">
 
+<h4 id="p1_name"></h4> <span id="p1_score"></span>
+<br>
+<h4 id="p2_name"></h4> <span id="p2_score"></span>
 
-	<br> <br>
+<div class="container">
 	<center>
-		<h1>MATH QUIZ</h1>
-		<br> <br>
-  <div class="col-lg-4 col-sm-8 col-xs-11 login_div1 centered">
-    <h3> Player 1 Login for the game </h3>
-    <label> User Name: </label> <br>
-    <input type="text" id="player1_i" class="form-control" placeholder="Player 1 Name">
-    <br> 
-  </div> 
-	<br> <br>
+		<h2 style="color: white;">Math Quiz</h2>
+    <h3 id="p_question"></h3>
+    <h3 id="p_answer"></h3>
+    <div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+		<div id="word_control">
+		<label>Enter your 2 Numbers : <b style="color: red">Try putting numbers bigger than 1000.</b></label>
 
-  <div class="col-lg-4 col-sm-8 col-xs-11 login_div2 centered">
-    <h3> Player 2 Login for the game </h3>
-    <label> User Name: </label> <br>
-    <input type="text" id="player2_i" class="form-control" placeholder="Player 2 Name">
-    <br> 
-  </div> 
-	<br> <br>
+    <input type="number" id="n1" class="form-control" placeholder="Enter your Number">
+		<br>
+    <input type="number" id="n2" class="form-control" placeholder="Enter your Number 2.0">
+		<br>
+    <button onclick="send();" class="btn btn-success" style="width: 30%;">Send</button>
+	</div>
 
-  <button style="width:30%;" class="btn btn-primary centered" onclick="addUsers();">Login</button>
-</center>
+	</center>
+</div>
 
-
+<script src="game.js"></script>
 </body>
 </html>
